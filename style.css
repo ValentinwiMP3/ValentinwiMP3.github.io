@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #2c1c5c, #362763);
+    min-height:100vh;
+    color:white;
+}
+
+/* main layout */
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:30px;
+
+    padding:100px 20px 40px;
+}
+
+/* main box */
+.main{
+    width:500px;
+
+    padding:30px;
+
+    background: rgba(20, 16, 40, 0.7);
+
+    border: 1px solid rgba(180, 140, 255, 0.25);
+
+    border-radius: 10px;
+
+    text-align:center;
+}
+
+/* title */
+.title{
+    font-size:50px;
+    margin-bottom:10px;
+    color:#f2ecff;
+}
+
+/* text */
+.text{
+    color:#ddd;
+    line-height:1.5;
+    font-size:0.95rem;
+}
+
+/* line */
+.line{
+    width:40px;
+    height:2px;
+    background:#b48cff;
+    margin:15px auto;
+}
+
+/* quote */
+.quote{
+    margin-top:15px;
+    padding-left:10px;
+    border-left:2px solid #a07bff;
+
+    color:#cdbbff;
+    font-style:italic;
+
+    font-size:0.95rem;
+    line-height:1.4;
+}
+
+/* music */
+.music{
+    margin-top:15px;
+}
+
+/* side images */
+.side{
+    width:220px;
+    height:480px;
+    object-fit:cover;
+
+    border-radius:8px;
+
+    border:1px solid rgba(180,140,255,0.2);
+}
+
+.left{
+    transform: rotate(-1deg);
+}
+
+.right{
+    transform: rotate(1deg);
+}
+
+/* photos box */
+.photos{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+    margin:20px auto 80px auto;
+
+    width:fit-content;
+
+    padding:20px;
+
+    background: rgba(20, 16, 40, 0.5);
+
+    border: 1px solid rgba(180, 140, 255, 0.2);
+
+    border-radius: 10px;
+}
+
+/* photos */
+.photo{
+    width:140px;
+    height:180px;
+    object-fit:cover;
+
+    border-radius:6px;
+
+    border:1px solid rgba(180,140,255,0.2);
+}
+
+/* slight human randomness */
+.p1{
+    transform:rotate(-3deg) translateY(10px);
+}
+
+.p2{
+    transform:rotate(2deg);
+}
+
+.p3{
+    transform:rotate(-2deg) translateY(4px);
+}
+
+/* mobile */
+@media (max-width: 900px){
+    .container{
+        flex-direction:column;
+        align-items:center;
+        padding:40px 15px 20px;
+    }
+
+    .side{
+        width:90%;
+        height:280px;
+    }
+
+    .photos{
+        flex-direction:column;
+        align-items:center;
+        width:90%;
+    }
+
+    .photo{
+        width:85%;
+        height:240px;
+    }
+
+    .main{
+        width:95%;
+    }
+}
